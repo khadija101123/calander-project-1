@@ -8,22 +8,28 @@
         .container{
             display: grid;
             grid-template-columns: repeat(7,1fr);
+            grid-template-rows:30px repeat(5,50px);
              row-gap: 10px;
              column-gap: 10px;
             
         }
-        .date{
+        .date, .day{
             border: 2px solid blueviolet;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: rgb(96, 228, 56);
+            font-size: 1.5rem;
 
 
         }
         h1{
             color: #3a90c2;
+        }
+        .day{
+            background-color: #d9e9d0;
+            font-size: 1rem;
         }
 
     </style>
@@ -31,6 +37,13 @@
 <body>
     <h1>Calander layout using Grid & flex</h1>
     <div class="container">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
         <div class="date">29</div>
         <div class="date">30</div>
         <div class="date">31</div>
